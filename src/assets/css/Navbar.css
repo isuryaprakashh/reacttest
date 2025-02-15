@@ -1,0 +1,93 @@
+body{
+    margin: 0rem;
+    font-family: 'Poppins';
+    background-color: rgb(175, 245, 200);
+
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+   
+    padding:1rem;
+    box-shadow:1px 1px 5px rgb(244, 245, 175);
+    background-color: rgba(255, 255, 255, 0.7);
+    
+    
+    margin:0px auto;
+
+    width: max-content;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+nav{
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    list-style: none;
+    
+}
+
+.nav-logo img{
+height: 1.3rem;
+
+}
+.navbar{
+display: flex;
+gap: 1rem;
+}
+.navbar a{
+text-decoration: none;
+color:grey;
+
+}
+.navbar a:hover {
+    color: black;
+}
+
+.hero{
+   
+    height: 1000vh;
+    text-align: center;
+}
+.sidebar{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    top:0px;
+    right:0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:1rem;
+
+
+    
+}
+
+.sidebar img{
+    height: 1.3rem;
+}
+.sidebar a{
+    text-decoration: none;
+    color:grey;
+}
+.sidebar a:hover{
+    color: black;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+
+    }
+    .menu-button{
+        display: block;
+    }
+    
+}
